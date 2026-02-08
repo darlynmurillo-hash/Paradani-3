@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 5 Meses, Mi Amor</title>
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- Librería de Confetti (Ligera) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fondo de corazones JS generará esto -->
+    <div class="heart-bg" id="heartBg"></div>
+
+    <div class="container-fluid" style="padding: 0;">
+        <!-- Hero + Timer (Default/Gradient) -->
+        <section class="section-default">
+            <div class="container">
+                <header class="hero">
+                    <h1>Feliz 5 Meses</h1>
+                    <p class="subtitle">Gracias por estos 5 meses a tu lado Dani</p>
+                    <div class="decoration sticker-heart" style="top: 10%; left: 10%; font-size: 4rem;">💖</div>
+                    <div class="decoration sticker-heart" style="top: 20%; right: 15%; font-size: 3rem;">💘</div>
+                </header>
+
+                <div class="timer-box" id="timer">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <div class="time-label">Días</div>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <div class="time-label">Horas</div>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <div class="time-label">Minutos</div>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <div class="time-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Carousel (Dark) -->
+        <section class="section-dark">
+            <div class="container">
+                <h2 class="section-title" style="margin-top: 50px;">Nosotros siendo Nosotros</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <video src="WhatsApp Video 2026-02-08 at 11.34.44.mp4" controls muted loop autoplay></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="WhatsApp Video 2026-02-08 at 11.34.46.mp4" controls muted loop autoplay></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="WhatsApp Video 2026-02-08 at 11.34.57.mp4" controls muted loop autoplay></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="WhatsApp Video 2026-02-08 at 11.34.59.mp4" controls muted loop autoplay></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="WhatsApp Video 2026-02-08 at 11.38.53.mp4" controls muted loop autoplay></video>
+                        </div>
+                        <div class="carousel-item">
+                            <video src="WhatsApp Video 2026-02-08 at 11.44.33.mp4" controls muted loop autoplay></video>
+                        </div>
+                    </div>
+                    <div class="decoration sticker-star" style="top: -20px; left: -20px;">✨</div>
+                    <div class="decoration sticker-star" style="bottom: -20px; right: -20px;">✨</div>
+                    <div class="decoration sticker-star" style="top: 50%; right: -40px;">✨</div>
+                    <div class="decoration sticker-star" style="top: 10%; left: -30px;">✨</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline (Default/Gradient) -->
+        <section class="section-default">
+            <div class="container">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <div class="decoration sticker-bear" style="top: 10px; right: 10px; transform: rotate(15deg);">🧸</div>
+                <div class="timeline">
+                    <!-- Mes 1 -->
+                    <div class="timeline-item">
+                        <div class="month-marker">1</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">El Comienzo</div>
+                            <p>Desde el día que te vi supe que eras el amor de mi vida</p>
+                            <!-- <img src="placeholder.jpg" style="width:100%; border-radius:10px; margin-top:10px;"> -->
+                        </div>
+                    </div>
+
+                    <!-- Mes 2 -->
+                    <div class="timeline-item">
+                        <div class="month-marker">2</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Primeras Salidas</div>
+                            <p>Me di cuenta de que eres una persona increible y quisiera tener todo ese amor tuyo para
+                                mi
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mes 3 -->
+                    <div class="timeline-item">
+                        <div class="month-marker">3</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Más Unidos</div>
+                            <p>Descubriendo el mundo juntos a tu lado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mes 4 -->
+                    <div class="timeline-item">
+                        <div class="month-marker">4</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Inolvidable</div>
+                            <p>Momentos que guardaré por siempre en mi corazón y que me hacen feliz.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mes 5 -->
+                    <div class="timeline-item">
+                        <div class="month-marker">5</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Hoy</div>
+                            <p>Cinco meses maravillosos y vamos por más, te amo Daniela</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards (Dark) -->
+        <section class="section-dark" style="position: relative;">
+            <div class="decoration sticker-rose" style="top: 20px; left: 20px;">🌹</div>
+            <div class="container">
+                <h2 class="section-title">Razones por las que te amo</h2>
+                <div class="cards-section">
+                    <div class="cards-grid">
+                        <div class="love-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Gemini_Generated_Image_926p69926p69926p.png" alt="Love"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                </div>
+                                <div class="card-back">Por ser alguien tan unica y especial</div>
+                            </div>
+                        </div>
+                        <div class="love-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Gemini_Generated_Image_926p69926p69926p.png" alt="Love"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                </div>
+                                <div class="card-back">Por tu forma de amar que tanto me encanta</div>
+                            </div>
+                        </div>
+                        <div class="love-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Gemini_Generated_Image_926p69926p69926p.png" alt="Love"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                </div>
+                                <div class="card-back">Por ser mi paz y mi refugio seguro.</div>
+                            </div>
+                        </div>
+                        <div class="love-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Gemini_Generated_Image_926p69926p69926p.png" alt="Love"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                </div>
+                                <div class="card-back">Por hacerme sentir la persona más afortunada</div>
+                            </div>
+                        </div>
+                        <div class="love-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Gemini_Generated_Image_926p69926p69926p.png" alt="Love"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                </div>
+                                <div class="card-back">Por tu carita tan linda que me demuestras lo mucho que me amas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="love-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="Gemini_Generated_Image_926p69926p69926p.png" alt="Love"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                </div>
+                                <div class="card-back">Por tu ricas nalgotas 👄</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memories (Default/Gradient) -->
+        <section class="section-default" style="position: relative;">
+            <div class="decoration sticker-heart" style="bottom: 20px; left: 50px; font-size: 4rem;">💝</div>
+            <div class="container">
+                <h2 class="section-title">Nuestros Recuerdos</h2>
+                <div class="collage-section">
+                    <div class="collage-grid">
+                        <!-- Foto 1 -->
+                        <div class="polaroid">
+                            <!-- Sube tus imágenes y cambia el src -->
+                            <img src="WhatsApp Image 2026-02-07 at 23.15.46 (1).jpeg" alt="Recuerdo 1">
+                            <div class="polaroid-caption">Amo</div>
+                        </div>
+                        <!-- Foto 2 -->
+                        <div class="polaroid">
+                            <img src="WhatsApp Image 2026-02-07 at 23.15.46 (2).jpeg" alt="Recuerdo 2">
+                            <div class="polaroid-caption">Tu manera de ser</div>
+                        </div>
+                        <!-- Foto 3 -->
+                        <div class="polaroid">
+                            <img src="WhatsApp Image 2026-02-07 at 23.15.46 (3).jpeg" alt="Recuerdo 3">
+                            <div class="polaroid-caption">Tu ser</div>
+                        </div>
+                        <!-- Foto 4 -->
+                        <div class="polaroid">
+                            <img src="WhatsApp Image 2026-02-07 at 23.15.46 (4).jpeg" alt="Recuerdo 4">
+                            <div class="polaroid-caption">Tu sonrisa</div>
+                        </div>
+                        <!-- Foto 5 -->
+                        <div class="polaroid">
+                            <img src="WhatsApp Image 2026-02-07 at 23.15.46 (5).jpeg" alt="Recuerdo 5">
+                            <div class="polaroid-caption">Tus abrazos</div>
+                        </div>
+                        <!-- Foto 6 -->
+                        <div class="polaroid">
+                            <img src="WhatsApp Image 2026-02-07 at 23.15.46.jpeg" alt="Recuerdo 6">
+                            <div class="polaroid-caption">Tu todo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Letter (Dark) -->
+        <section class="section-dark">
+            <div class="container">
+                <h2 class="section-title">Para Ti</h2>
+                <div class="letter-section">
+                    <div class="decoration"
+                        style="top: -15px; left: 50%; transform: translateX(-50%); font-size: 2rem;">📌</div>
+                    <p>Mi amor,</p>
+                    <p>Daniela, gracias por estos increibles 5 meses a mi lado He sido el hombre más feliz de la tierra
+                        y deseo
+                        con toda el alma pasar la vida que nos queda a tu lado. Eres mi rayito de luz en esta oscuridad,
+                        eres la
+                        persona por la cual despierto todas las mañanas, eres mi todo........ TE AMOOOOOOOOOO</p>
+                    <p>Con todo mi amor,</p>
+                    <p>Darlyn</p>
+                </div>
+
+                <!-- Botón Final -->
+                <div class="final-surprise">
+                    <button class="magic-btn" onclick="celebrate()">Oye</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Sorpresa -->
+    <div class="modal" id="surpriseModal">
+        <div class="modal-content">
+            <h2 style="font-family: 'Pinyon Script'; font-size: 3rem; color: var(--secondary-color);">¡Te Amo!</h2>
+            <p style="margin: 20px 0; font-size: 1.2rem;">No nada 👻</p>
+            <button class="magic-btn" onclick="closeModal()"
+                style="padding: 10px 30px; font-size: 1rem;">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Música (Opcional, requiere interacción usuario muchas veces) -->
+    <audio id="bgMusic" loop>
+        <source src="SpotiDownloader.com - Amtrak - Los Retros.mp3" type="audio/mpeg">
+    </audio>
+    <div class="music-control" onclick="toggleMusic()" title="Poner Música">
+        🎵
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
